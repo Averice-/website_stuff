@@ -1,0 +1,306 @@
+/*****************************
+	DEVNET STYLESHEET
+*****************************/
+
+@charset "utf-8";
+html { height:100%; }
+body {
+	font:90% "Verdana";
+	margin:0;
+	background-color:#DBDBDB;
+	height:100%;
+	min-width:1024px;
+}
+
+div.header {
+	background-color:#303030;
+	height:120px;
+	position:absolute;
+	width:100%;
+}
+
+div.headercontent {
+	position:relative;
+	width:1370px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+}
+
+div.headerbreak {
+	background-color:#CC0000;
+	width:100%;
+	position:absolute;
+	height:2px;
+	top:120px;
+}
+
+div.loginbox {
+	position:relative;
+	float:right;
+	top:20%;
+}
+
+div.leftcolumn{
+	width:220px;
+	height:auto;
+	position:relative;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+	padding-bottom:5px;
+}
+
+div.rightcolumn {
+	width:220px;
+	height:auto;
+	position:relative;
+	margin-top:10px;
+	margin-right:10px;
+	float:right;
+}
+
+div.sidebar {
+	margin-bottom:5px;
+	background-color:#DBDBDB;
+	width:100%;
+	border:#999999 solid 1px;
+	border-radius:2px;
+	overflow:hidden;
+	height:auto;
+}
+
+div.popup {
+	height:auto;
+	width: 20%;
+	position: fixed;
+	left: 50%;
+	margin: 10% 0 0 -7.5%;
+	background-color:#DBDBDB;
+	border:#999 solid 1px;
+	border-radius:2px;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+
+div.overlay {
+	width:100%;
+	height:100%;
+	z-index:9000;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgba(40,40,40,0.5);
+}
+
+div.forumcontainer {
+	width:100%;
+	height:40px;
+	border-bottom:#999999 1px solid;
+	clear:both;
+	margin:0px;
+}
+
+div.imgLeftCont {
+	width:32px;
+	height:32px;
+	float:left;
+	padding:4px;
+}
+
+div.mainCont {
+	width:auto;
+	height:32px;
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-left:5px;
+	float:left;
+	color:#464646;
+	font-weight:bold;
+}
+
+div.lastPostCont {
+	width:180px;
+	height:32px;
+	padding:4px;
+	float:right;
+	white-space:nowrap;
+	background-color:#C4C4C4;
+	border-left:#999999 1px solid;
+}
+
+div.smallavatarbox {
+	width:32px;
+	height:32px;
+	float:left;
+}
+div.smallTextBox {
+	margin-left:4px;
+	width:70%;
+	height:32px;
+	float:left;
+	font-size:9px;
+	overflow:hidden;
+	font-weight:normal;
+}
+
+div.smallTextBox a {
+	text-decoration:none;
+	font-weight:bold;
+	color:#CC0000;
+}
+
+div.smallTextBox a:hover {
+	text-decoration:none;
+	font-weight:bold;
+	color:#FF0000;
+}
+
+div.threadCount {
+	width:100px;
+	height:32px;
+	color:#707070;
+	font-size:10px;
+	padding:4px;
+	background-color:#C4C4C4;
+	float:right;
+}
+
+div.textbox {
+	width:96%;
+	height:auto;
+	overflow:hidden;
+	margin-left:2%;
+	position:relative;
+}
+
+div.midcolumn {
+	width:660px;
+	height:auto;
+	position:relative;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+}
+
+div.midheader {
+	padding-left:5px;
+	padding-top:4px;
+	float:left;
+}
+
+input[type="text"]{
+	border: #999 solid 1px;
+	border-radius:2px;
+	background-color:#DBDBDB;
+	font-size:12px;
+}
+input[type="password"]{
+	border: #999 solid 1px;
+	border-radius:2px;
+	background-color:#DBDBDB;
+	font-size:12px;
+}
+
+.selection {
+	background-color:#DBDBDB;
+	border: #999 solid 1px;
+	border-radius:2px;
+	font-size:12px;
+}
+.miniButton {
+	background:url(../imgx/gradient-red.png) #FFF repeat;
+	font: 100% "Arial";
+	text-decoration:none;
+	font-weight:bold;
+	color:#DBDBDB;
+	width:14px;
+	height:12px;
+	margin-top:2px;
+	margin-right:2px;
+	float:right;
+	padding-bottom:3px;
+	border: #999 solid 1px;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+div.sideheader {
+	background:url(../imgx/gradient-bar.png) #FFF;
+	width:100%;
+	height:20px;
+	font-size:12px;
+	font-weight:bold;
+	color:#DBDBDB;
+	border-bottom: #CC0000 solid 2px;
+}
+
+div.palecontainer {
+	background-color:#F5F5F5;
+	border:#999999 solid 1px;
+	border-top: 0px;
+	position:relative;
+	top:122px;
+	width:1370px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+}
+
+.navLink {
+	background-color:#DBDBDB;
+	cursor:pointer;
+	width:100%;
+	height:12px;
+	padding:4px;
+}
+
+.navLink2 {
+	background-color:#C4C4C4;
+	cursor:pointer;
+	width:100%;
+	height:12px;
+	padding:4px;
+}
+
+.navLink a {
+	color: #464646;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.navLink2 a {
+	color: #464646;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.navLink:hover {
+	color:#FF7A7A;
+}
+.navLink2:hover {
+	color:#FF7A7A;
+}
+
+.defaultButton {
+	background:url(../imgx/gradient-red.png) #FFF repeat;
+	font: 100% "Arial";
+	text-decoration: none;
+	font-weight:bold;
+	color:#DBDBDB;
+	padding:4px;
+	font-size:12px;
+	border: #999999 solid 1px;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+.defaultButton:hover{
+	color:#FFF;
+}
+.miniButton:hover{
+	color:#FFF;
+}

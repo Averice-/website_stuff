@@ -1,0 +1,88 @@
+Website notes.
+
+
+Database layout( working order ).
+
+USERS:
+	USER TABLE:
+		Id : Auto Increment : Primary Key : Unique (id)
+		Username : Unique (username)
+		E-mail : Unique (email)
+		Postcount (number)
+		Password (sha512:password)
+		Authenticated (1/0)
+		Join Date (dd/mm/yy)
+		Groups ( id;id;id;id )
+		Main Group (id)
+		Requires Approval : (1/0)
+		ProfMessagesUnRead ( Count;[messageid][messageid] )
+		InstMessagesUnRead ( Count;[messageif][messageif] )
+		Avatar (imgurl)
+		Gender (1/0)
+		Title (title)
+		Credit/Thanks (num)
+		Achievments (acheid;acheid;acheid)
+		Contacts (id;id;id;id)
+		Contact Requests ( count;[ID:Yes/No][ID:Yes/No] )
+		Contact Accepted ( count;[id] )
+		Country 
+		Date of birth
+		Refferal
+		CookieID
+		BanTime
+		
+	PROFILE MESSAGES:
+		MessageID
+		Author ID
+		Profile User ID
+		Message
+		Message Date
+		
+	PRIVATE MESSAGES:
+		MessageID
+		UserID
+		AuthorID
+		Message
+		
+	
+	
+	
+FORUMS:
+	CATEGORIES:
+		Id : Unique
+		Title
+		Position
+		Visible Groups
+		
+	SECTION:
+		Id : Unique
+		Category
+		Position
+		Title
+		Desc
+		Last Post ( ThreadID:UserID:Date )
+		Visible Groups
+		
+	THREADS:
+		Id : Unique
+		SectionID
+		Title
+		Author
+		Post Date
+		Sticky
+		Announce
+		Closed
+		
+	POSTS:
+		Id : Unique
+		ThreadID
+		Author
+		Message
+		Approved ( Check if user needs approval )
+		Reports : Number ( If higher than 10, auto-remove )
+		
+	REPORTED POSTS
+		PostID
+		AuthorID
+		ReporterID
+		Reason
